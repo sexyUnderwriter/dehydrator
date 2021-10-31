@@ -63,10 +63,6 @@ void loop() {
   } else {
 
     //drive output
- //   float hum = dht.readHumidity();
-//    float fah = dht.readTemperature(true);      //Reading the temperature in fahrenheit
-    //   Serial.println(fah);
-    // Serial.println(ttemp);
     if (fah < ttemp) {
       digitalWrite(RelayPin, HIGH);
       digitalWrite(LEDPin, LOW);
@@ -99,14 +95,3 @@ void loop() {
     }
   }
 }
-//    {
-//      unsigned long currentMillis = millis();
-//
-//      if (currentMillis - previousMillis >= interval) {
-//        // save the last time you blinked the LED
-//        previousMillis = currentMillis;
-//        lcd.clear();
-//        lcd.setCursor(0, 0);
-//        lcd.print("Target:");
-//        lcd.print(ttemp);
-//        return;
